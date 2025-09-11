@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stevos site demo</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+      html,
+      body {
+        background: #fff;
+        color: #222;
+        font-family: "Inter", serif;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      a {
+        color: #1a0dab;
+        text-decoration: underline;
+      }
+      a:visited {
+        color: #660099;
+      }
+      a:hover {
+        color: #d33;
+      }
+
+      header,
+      nav,
+      main,
+      aside,
+      section,
+      footer {
+        max-width: 700px;
+        margin: auto;
+        padding: 0 16px;
+      }
+
+      header {
+        border-bottom: 3px double #222;
+        padding-top: 32px;
+        padding-bottom: 16px;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+
+      .site-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 0.2em;
+      }
+
+      .site-subtitle {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 0.5em;
+        font-style: italic;
+      }
+
+      nav {
+        border-bottom: 1px solid #bbb;
+        margin-bottom: 32px;
+        font-size: 1.1rem;
+        padding-bottom: 8px;
+        text-align: left;
+      }
+      nav a {
+        margin-right: 24px;
+        text-decoration: underline;
+        color: #222;
+      }
+      nav a.active {
+        font-weight: bold;
+        background: #eee;
+        padding: 2px 6px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: inherit;
+        font-weight: bold;
+        margin-top: 1.6em;
+        margin-bottom: 0.6em;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-top: 0.5em;
+      }
+      h2 {
+        font-size: 1.3rem;
+        border-bottom: 1px solid #bbb;
+        padding-bottom: 3px;
+      }
+      h3 {
+        font-size: 1.1rem;
+      }
+      ul,
+      ol {
+        padding-left: 1.2em;
+      }
+      .archive-list {
+        margin: 0 0 2em 0;
+        padding: 0;
+        list-style: none;
+      }
+      .archive-list li {
+        border-bottom: 1px dotted #ccc;
+        padding: 6px 0;
+      }
+      .release-card {
+        padding: 10px 0;
+        border-bottom: 1px dashed #ccc;
+      }
+      .byline,
+      .meta {
+        color: #888;
+        font-size: 0.97em;
+        font-style: italic;
+      }
+      .section-block {
+        margin-top: 2.5em;
+      }
+
+      .contact-block {
+        background: #f5f5f5;
+        padding: 15px 20px;
+        border: 1px solid #ddd;
+        margin: 2em 0;
+        font-size: 1.05em;
+      }
+      footer {
+        font-size: 1em;
+        color: #666;
+        border-top: 2px double #222;
+        margin-top: 3em;
+        padding-top: 1.3em;
+        text-align: center;
+        background: #fafafa;
+      }
+      .footer-title {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      @media (max-width: 600px) {
+        html,
+        body {
+          font-size: 16px;
+        }
+        header,
+        nav,
+        main,
+        aside,
+        section,
+        footer {
+          max-width: 100%;
+          padding: 0 5vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="site-title">Stevo Site Demo</div>
+      <div class="site-subtitle">Defining the future of sound</div>
+    </header>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#archive">Archive</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <main>
+      <section id="home">
+        <h1>Welcome</h1>
+        <p>
+          <span class="byline">By Stevo Label, 2025</span>
+        </p>
+        <p>
+          Welcome to the Stevo Label – your newspaper for the next wave of
+          sound, discovery, and creative energy. Browse our latest releases,
+          learn about our vision, and dig into our archive.
+        </p>
+      </section>
+
+      <section id="about" class="section-block">
+        <h2>About Us</h2>
+        <p>
+          We are committed to pushing boundaries and discovering the next
+          generation of groundbreaking artists. Stevo Label represents
+          innovation, creativity, and the relentless pursuit of sonic
+          excellence.
+        </p>
+        <ul>
+          <li>
+            <b>Quality First:</b> Every release meets our highest standards.
+          </li>
+          <li><b>Artist Support:</b> Comprehensive support for our artists.</li>
+          <li><b>Innovation:</b> Pushing creative boundaries.</li>
+        </ul>
+      </section>
+
+      <section id="archive" class="section-block">
+        <h2>Archive</h2>
+        <ul class="archive-list">
+          <li>
+            <div class="release-card">
+              <strong>Coming Soon</strong>
+              <span class="meta">/ Artist Name</span>
+              <br />
+              <a href="#">Listen Now</a>
+            </div>
+          </li>
+          <li>
+            <div class="release-card">
+              <strong>Coming Soon</strong>
+              <span class="meta">/ Artist Name</span>
+              <br />
+              <a href="#">Listen Now</a>
+            </div>
+          </li>
+          <li>
+            <div class="release-card">
+              <strong>Coming Soon</strong>
+              <span class="meta">/ Artist Name</span>
+              <br />
+              <a href="#">Listen Now</a>
+            </div>
+          </li>
+        </ul>
+        <p><em>Check back for more releases in the future.</em></p>
+      </section>
+
+      <section id="contact" class="section-block">
+        <h2>Contact</h2>
+        <div class="contact-block">
+          <p>
+            <b>Email:</b>
+            <a href="mailto:contact@yourlabel.com">contact@yourlabel.com</a
+            ><br />
+            <b>Location:</b> Your City, Country<br />
+            <b>Phone:</b> <a href="tel:01212121212">01212121212</a>
+          </p>
+          <p>
+            Ready to join our label or collaborate?
+            <a href="mailto:contact@yourlabel.com">Start a conversation</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-title">Stevo site demo newspaper</div>
+      <p>&copy; 2025 Stevo site demo. All rights reserved.</p>
+      <p>
+        <a href="#">Twitter</a> | <a href="#">Instagram</a> |
+        <a href="#">Reddit</a>
+      </p>
+    </footer>
+  </body>
+</html>
